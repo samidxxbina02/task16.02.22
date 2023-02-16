@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@keyframes background {
+  50% {
+    background: skyblue;
+    box-shadow: 0 -200px 100px -100px yellowgreen inset;
+  }
+}
+
+.wrapper {
+  border: 4px solid skyblue;
+  border-image: linear-gradient(
+    to right top,
+    rgb(193, 23, 171),
+    skyblue,
+    rgb(117, 15, 168)
+  );
+  border-image-slice: 1;
+  width: 350px;
+  text-align: center;
+  background: gold;
+  box-shadow: 0 -200px 100px -120px crimson inset;
+  animation: background 3s infinite alternate;
+  margin: 9px;
+  border-radius: 50px;
+}
+
+.wrapper img {
+  height: 300px;
+  margin-top: 15px;
+}
+
+.title {
+  color: white;
+  border: 2px white solid;
+  width: auto;
+  font-size: 20px;
+}
+
+.title:hover {
+  border: 3px blue solid;
+}
+
+.year {
+  color: aliceblue;
+  border: 2px white solid;
+  font-size: 20px;
+}
